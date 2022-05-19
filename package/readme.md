@@ -11,14 +11,15 @@ $ npm install @saintbull/rss-parsify
 ```js
   import RssParsify from '@saintbull/rss-parsify'
   const result = await RssParsify.parseToJSON('url')
-  console.log(result)
+  const contentParsed = RssParsify.parseHTML(result[0].content)
+  console.log(contentParsed)
 ```
 
 or
 
 ```js
 import RssParsify from '@saintbull/rss-parsify';
-RssParsify.parseToJSON('url').then(result => {
-  console.log(result);
+RssParsify.parseToJSON(url).then(result => {
+  console.log(RssParsify.parseHTML(result[0].content))
 });
 ```
