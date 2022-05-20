@@ -1,15 +1,15 @@
 {
-  "name": "@saintbull/rss-parsify",
-  "version": "0.1.6",
+  "name": "@saintbull/vue-rss-parsify",
+  "version": "0.2.3",
   "description": "Parser for rss feeds using allorigins.win api",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/src/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/MatthewSaintBull/rss-parsify.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx babel src/index.js -d dist"
   },
   "keywords": [
     "rss",
@@ -26,5 +26,9 @@
     "lodash": "^4.17.21",
     "node-fetch": "^3.2.4",
     "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-vite": "^1.0.4"
   }
 }
