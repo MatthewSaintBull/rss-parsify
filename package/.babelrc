@@ -1,0 +1,11 @@
+{
+  "presets": [
+    [
+      "babel-preset-vite",
+      {
+        "env": false, // defaults to true
+        "glob": false // defaults to true
+      }
+    ]
+  ]
+}
