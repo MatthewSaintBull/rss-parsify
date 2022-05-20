@@ -1,6 +1,6 @@
 {
   "name": "@saintbull/vue-rss-parsify",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "description": "Parser for rss feeds using allorigins.win api",
   "type": "module",
   "main": "dist/src/index.js",
@@ -23,14 +23,13 @@
   "author": "Matteo Saintbull Santoro",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.21",
-    "node-fetch": "^3.2.4",
     "stream-browserify": "^3.0.0",
     "timers": "^0.1.1",
     "xml2js": "^0.4.23"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-vite": "^1.0.4"
+    "babel-preset-vite": "^1.0.4",
+    "lodash": "^4.17.21"
   }
 }

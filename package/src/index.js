@@ -17,7 +17,8 @@ export default (function RssParsify() {
       .replace(/&#8216;/g, "'")
       .replace(/&#8212;/g, "—")
       .replace(/&#39;/g, "'")
-      .replace(/&#32;/g, " ");
+      .replace(/&#32;/g, " ")
+      .replace(/&#124;/g, "|");
   };
   const parseToJSON = async (feedUrl) => {
     const apiToParse = `https://api.allorigins.win/get?url=${feedUrl}`;
